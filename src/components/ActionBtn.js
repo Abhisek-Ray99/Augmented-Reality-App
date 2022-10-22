@@ -1,6 +1,9 @@
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity, Dimensions } from 'react-native'
 import React from 'react'
 import Ionicons from 'react-native-vector-icons/Ionicons'
+
+
+const windowWidth = Dimensions.get('window').width
 
 
 const ActionBtn = ({onPress}) => {
@@ -27,10 +30,10 @@ const styles = StyleSheet.create({
         position: 'absolute',
         width: 65,
         height: 65,
-        backgroundColor: '#000',
+        backgroundColor: '#7895B2',
         justifyContent: 'center',
         bottom: 20,
-        left: 300,
+        left: windowWidth-80,
         alignItems: 'center',
         borderRadius: 35,
     },
