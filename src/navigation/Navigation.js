@@ -29,7 +29,7 @@ export default function Home_Screen(){
             <HomeStack.Screen 
                 name="profilescreen" 
                 component={Profile}
-                options={{headerShown: false}} 
+                // options={{headerShown: false}} 
             />
         </HomeStack.Navigator>
     )

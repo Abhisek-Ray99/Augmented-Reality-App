@@ -74,9 +74,9 @@ const BottomSheet = React.forwardRef(({}, ref) => {
         {/* Animation of View Component so used Animated.View */}
         <Animated.View style={[styles.bottomSheetContainer, rBottomSheetStyle]}>
             <View style={styles.line}/>
-            <View styles={{}}>
-                <Button name="Snap a video"/>
-                <Button name="Snap a photo" />
+            <View>
+                <Button name="Snap a video" IconName="video-camera"/>
+                <Button name="Snap a photo" IconName="camera"/>
             </View>
         </Animated.View>
     </GestureDetector>
