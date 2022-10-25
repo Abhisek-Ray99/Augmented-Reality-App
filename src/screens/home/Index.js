@@ -25,7 +25,7 @@ const Home = ({navigation}) => {
                     <Text style={styles.cTitle}> P </Text>
                 </TouchableOpacity>
             </View>
-        )
+        ),
     });
   }, [navigation])
 
