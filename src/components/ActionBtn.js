@@ -1,10 +1,8 @@
 import { StyleSheet, Text, View, TouchableOpacity, Dimensions } from 'react-native'
 import React from 'react'
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons'
+import { windowWidth } from '../utils/Dimensions'
 
-
-const windowWidth = Dimensions.get('screen').width
-const windowHeight = Dimensions.get('screen').height
 
 
 const ActionBtn = ({onPress}) => {
