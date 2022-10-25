@@ -1,6 +1,8 @@
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, View, TouchableOpacity, Dimensions } from 'react-native'
 import React from 'react'
-import Ionicons from 'react-native-vector-icons/Ionicons'
+import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons'
+import { windowHeight, windowWidth } from '../utils/Dimensions'
+
 
 
 const ActionBtn = ({onPress}) => {
@@ -10,9 +12,9 @@ const ActionBtn = ({onPress}) => {
         style={[styles.ABtn, styles.shadowProps]}
         onPress={onPress}
     >
-      <Ionicons
-        name='videocam'
-        size={25}
+      <SimpleLineIcons
+        name='screen-smartphone'
+        size={windowWidth / 14}
         color="#fff"
         style={styles.Actionstyle}
       />
@@ -25,12 +27,12 @@ export default ActionBtn
 const styles = StyleSheet.create({
     ABtn: {
         position: 'absolute',
-        width: 65,
-        height: 65,
-        backgroundColor: '#000',
+        width: windowWidth / 5.5,
+        height: windowHeight / 11.5,
+        backgroundColor: '#1D5DFF',
         justifyContent: 'center',
-        bottom: 20,
-        left: 300,
+        bottom: 30,
+        right: 25,
         alignItems: 'center',
         borderRadius: 35,
     },

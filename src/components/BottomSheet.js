@@ -3,6 +3,8 @@ import React, { useCallback, useEffect, useImperativeHandle } from 'react'
 import { Gesture, GestureDetector } from 'react-native-gesture-handler'
 import Animated, { Extrapolate, interpolate, useAnimatedStyle, useSharedValue, withSpring, withTiming } from 'react-native-reanimated'
 
+import Button from './Button'
+
 const {height: SCREEN_HEIGHT} = Dimensions.get('window')
 const MAX_TRANSLATE_Y = -SCREEN_HEIGHT + 50
 
@@ -72,6 +74,10 @@ const BottomSheet = React.forwardRef(({}, ref) => {
         {/* Animation of View Component so used Animated.View */}
         <Animated.View style={[styles.bottomSheetContainer, rBottomSheetStyle]}>
             <View style={styles.line}/>
+            <View>
+                <Button name="Snap a video" IconName="video-camera"/>
+                <Button name="Snap a photo" IconName="camera"/>
+            </View>
         </Animated.View>
     </GestureDetector>
   )
@@ -83,7 +89,7 @@ const styles = StyleSheet.create({
     bottomSheetContainer: {
         height: SCREEN_HEIGHT,
         width: '100%',
-        backgroundColor: '#000000',
+        backgroundColor: '#F5EFE6',
         position: 'absolute',
         top: SCREEN_HEIGHT,
         borderRadius: 25
@@ -91,7 +97,7 @@ const styles = StyleSheet.create({
     line: {
         width: 75,
         height: 4,
-        backgroundColor: 'white',
+        backgroundColor: 'grey',
         alignSelf: 'center',
         marginVertical: 15,
         borderRadius: 2,
