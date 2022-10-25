@@ -4,6 +4,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import Home from '../screens/home/Index'
 import Profile from '../screens/profile/Index'
+import TakePhoto from '../screens/snap/TakePhoto'
+import TakeVideo from '../screens/snap/TakeVideo'
+
 import { windowHeight } from '../utils/Dimensions';
 
 // ------------ <>created a Navigator for Home stack ------------
@@ -31,6 +34,14 @@ export default function Home_Screen(){
                 name="profilescreen" 
                 component={Profile}
                 // options={{headerShown: false}} 
+            />
+            <HomeStack.Screen
+                name="SnapVideo"
+                component={TakeVideo}
+            />
+            <HomeStack.Screen
+                name="SnapImage"
+                component={TakePhoto}
             />
         </HomeStack.Navigator>
     )

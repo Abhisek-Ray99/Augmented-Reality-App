@@ -4,9 +4,17 @@ import { TouchableOpacity } from 'react-native-gesture-handler'
 import Entypo from 'react-native-vector-icons/Entypo'
 import { windowHeight } from '../utils/Dimensions'
 
-const Button = ({name, IconName}) => {
+import { useNavigation } from '@react-navigation/native';
+
+const Button = ({name, IconName, screenName}) => {
+
+    const navigation = useNavigation();
+
   return (
-    <TouchableOpacity style={styles.btn}>
+    <TouchableOpacity 
+        onPress={() => navigation.navigate(screenName)}
+        style={styles.btn}
+    >
         <Text style={styles.btnText}>{name}</Text>
         <Entypo style={styles.btnIcon} name={IconName} size={14}/>
     </TouchableOpacity>

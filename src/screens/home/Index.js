@@ -8,7 +8,7 @@ import BottomSheet from '../../components/BottomSheet'
 import { windowHeight, windowWidth } from '../../utils/Dimensions'
 
 
-const Home = ({navigation}) => {
+const Home = ({ navigation }) => {
 
   //------ header right component redirect to Profile Screen -------------------
   useLayoutEffect(() => {

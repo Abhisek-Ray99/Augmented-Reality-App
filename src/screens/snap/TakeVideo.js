@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const TakePhoto = () => {
+const AddVideo = () => {
   return (
     <View>
-      <Text>TakePhoto</Text>
+      <Text>AddVideo</Text>
     </View>
   )
 }
 
-export default TakePhoto
+export default AddVideo
 
 const styles = StyleSheet.create({})
