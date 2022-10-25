@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import Home from '../screens/home/Index'
 import Profile from '../screens/profile/Index'
+import { windowHeight } from '../utils/Dimensions';
 
 // ------------ <>created a Navigator for Home stack ------------
 const HomeStack = createStackNavigator();
@@ -19,7 +20,7 @@ export default function Home_Screen(){
                 component={Home}
                 options={{
                     headerStyle: {
-                        height: 90,
+                        height: windowHeight / 8,
                         backgroundColor: '#1D5DFF'
                     },
                     headerTintColor: '#fff'

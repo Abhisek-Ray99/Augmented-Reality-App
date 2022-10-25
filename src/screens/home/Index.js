@@ -5,6 +5,7 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler'
 // --- Components ---
 import ActionBtn from '../../components/ActionBtn'
 import BottomSheet from '../../components/BottomSheet'
+import { windowHeight, windowWidth } from '../../utils/Dimensions'
 
 
 const Home = ({navigation}) => {
@@ -15,7 +16,11 @@ const Home = ({navigation}) => {
         headerRight: () => (
             <View
                 style={{
-                    marginRight: 15
+                    marginRight: 15,
+                    width: windowWidth / 7,
+                    height: windowHeight / 16,
+                    justifyContent: 'center',
+                    alignItems: 'center',
                 }}
             >
                 <TouchableOpacity
@@ -45,7 +50,6 @@ const Home = ({navigation}) => {
         <ActionBtn 
             onPress = {onPress}
         />
-        {/* <TouchableOpacity style={styles.button} onPress={onPress}/> */}
         <BottomSheet 
           ref = {ref}
         />
@@ -64,24 +68,18 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center'
   },
-  button: {
-    height: 50,
-    borderRadius: 25,
-    aspectRatio: 1,
-    backgroundColor: 'black',
-    opacity: 0.6
-  },
   touchbutton: {
-    width: 32,
-    height: 32,
+    width: windowWidth / 10,
+    height: windowHeight / 20,
     backgroundColor: '#C2E5FF',
     borderRadius: 35,
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   cTitle: {
     textAlign: 'center',
     color: '#000000',
-    fontSize: 17,
+    fontSize: windowHeight / 42,
     fontWeight: 'bold',
-    padding: 4
-},
+  },
 })

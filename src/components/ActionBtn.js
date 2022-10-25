@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, TouchableOpacity, Dimensions } from 'react-native'
 import React from 'react'
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons'
-import { windowWidth } from '../utils/Dimensions'
+import { windowHeight, windowWidth } from '../utils/Dimensions'
 
 
 
@@ -14,7 +14,7 @@ const ActionBtn = ({onPress}) => {
     >
       <SimpleLineIcons
         name='screen-smartphone'
-        size={25}
+        size={windowWidth / 14}
         color="#fff"
         style={styles.Actionstyle}
       />
@@ -27,12 +27,12 @@ export default ActionBtn
 const styles = StyleSheet.create({
     ABtn: {
         position: 'absolute',
-        width: 65,
-        height: 65,
+        width: windowWidth / 5.5,
+        height: windowHeight / 11.5,
         backgroundColor: '#1D5DFF',
         justifyContent: 'center',
-        bottom: 40,
-        left: windowWidth-90,
+        bottom: 30,
+        right: 25,
         alignItems: 'center',
         borderRadius: 35,
     },
