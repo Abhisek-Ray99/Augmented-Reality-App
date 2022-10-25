@@ -1,0 +1,17 @@
+[33mcommit 870f67e28a82d023adf8c2956f3b55e1f0a896c2[m[33m ([m[1;36mHEAD -> [m[1;32mtest1[m[33m, [m[1;31morigin/test1[m[33m)[m
+Author: Abhisek-Ray99 <rickyrayabhisek99@gmail.com>
+Date:   Sun Oct 23 07:40:53 2022 +0530
+
+    add screens for snap video and photo
+
+[33mcommit 83a20757b12299ddb212f54b9fec20efdf081d79[m
+Author: Abhisek-Ray99 <rickyrayabhisek99@gmail.com>
+Date:   Sun Oct 23 05:17:55 2022 +0530
+
+    added snap buttons
+
+[33mcommit 5b73e0b3428fc45e24f7073ce93c23cc8b671e6a[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Abhisek-Ray99 <rickyrayabhisek99@gmail.com>
+Date:   Fri Oct 21 20:07:19 2022 +0530
+
+    completed navigation & action button with bottom sheetí³

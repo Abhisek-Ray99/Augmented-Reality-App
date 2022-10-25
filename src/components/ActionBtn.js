@@ -3,8 +3,8 @@ import React from 'react'
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons'
 
 
-const windowWidth = Dimensions.get('window').width
-const windowHeight = Dimensions.get('window').height
+const windowWidth = Dimensions.get('screen').width
+const windowHeight = Dimensions.get('screen').height
 
 
 const ActionBtn = ({onPress}) => {
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
         height: 65,
         backgroundColor: '#1D5DFF',
         justifyContent: 'center',
-        bottom: windowHeight-780,
+        bottom: 40,
         left: windowWidth-90,
         alignItems: 'center',
         borderRadius: 35,
